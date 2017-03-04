@@ -1,0 +1,2 @@
+D:\Storage\FIA UES\project\QA_ANDROID\QA_ANDROID\bin\Debug\QA_ANDROID.exe.config
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\bin\Debug\QA_ANDROID.exe.config
