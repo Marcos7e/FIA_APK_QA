@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26020.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QA_ANDROID", "QA_ANDROID\QA_ANDROID.csproj", "{00C2DD0E-49C2-4025-B659-77E2CE486B8F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QA_ANDROID_TEST", "QA_ANDROID_TEST\QA_ANDROID_TEST.csproj", "{4236E189-37F8-4547-BB4A-AF2F9746F256}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QA_FIA_APK_CONSOLE", "QA_FIA_APK_CONSOLE\QA_FIA_APK_CONSOLE.csproj", "{CA07553E-B2D3-43F0-B738-8E807ECF6EC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4236E189-37F8-4547-BB4A-AF2F9746F256}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4236E189-37F8-4547-BB4A-AF2F9746F256}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4236E189-37F8-4547-BB4A-AF2F9746F256}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA07553E-B2D3-43F0-B738-8E807ECF6EC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA07553E-B2D3-43F0-B738-8E807ECF6EC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA07553E-B2D3-43F0-B738-8E807ECF6EC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA07553E-B2D3-43F0-B738-8E807ECF6EC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

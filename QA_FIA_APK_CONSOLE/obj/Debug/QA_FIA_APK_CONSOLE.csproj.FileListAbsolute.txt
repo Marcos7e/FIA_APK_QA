@@ -1,0 +1,6 @@
+C:\Users\Usuario\Documents\BE10003\FIA_APK_QA\QA_FIA_APK_CONSOLE\bin\Debug\QA_FIA_APK_CONSOLE.exe.config
+C:\Users\Usuario\Documents\BE10003\FIA_APK_QA\QA_FIA_APK_CONSOLE\bin\Debug\QA_FIA_APK_CONSOLE.exe
+C:\Users\Usuario\Documents\BE10003\FIA_APK_QA\QA_FIA_APK_CONSOLE\bin\Debug\QA_FIA_APK_CONSOLE.pdb
+C:\Users\Usuario\Documents\BE10003\FIA_APK_QA\QA_FIA_APK_CONSOLE\obj\Debug\QA_FIA_APK_CONSOLE.csprojResolveAssemblyReference.cache
+C:\Users\Usuario\Documents\BE10003\FIA_APK_QA\QA_FIA_APK_CONSOLE\obj\Debug\QA_FIA_APK_CONSOLE.exe
+C:\Users\Usuario\Documents\BE10003\FIA_APK_QA\QA_FIA_APK_CONSOLE\obj\Debug\QA_FIA_APK_CONSOLE.pdb
