@@ -40,5 +40,10 @@ namespace QA_FIA_APK_CONSOLE.core.Verificables
         {
             throw new NotImplementedException();
         }
+
+        public bool StartVerification()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

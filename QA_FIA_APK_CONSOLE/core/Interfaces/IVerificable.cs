@@ -15,7 +15,7 @@ namespace QA_FIA_APK_CONSOLE.core.Interfaces
 
         bool LoadMetrics();
         bool LoadSource();
-
+        bool StartVerification();
 
     }
 }

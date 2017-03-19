@@ -1,4 +1,5 @@
 ﻿using QA_FIA_APK_CONSOLE.core.Verificables;
+using QA_FIA_APK_CONSOLE.utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,8 +14,9 @@ namespace QA_FIA_APK_CONSOLE
         {
 
             AndroidVerification av = new AndroidVerification();
-            av.LoadMetrics(); 
-
+            av.LoadMetrics();
+            JSONRulesReader jr = new JSONRulesReader();
+            jr.read();
         }
     }
 }

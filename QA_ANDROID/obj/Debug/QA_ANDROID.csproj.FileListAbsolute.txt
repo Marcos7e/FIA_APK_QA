@@ -1,2 +1,15 @@
 D:\Storage\FIA UES\project\QA_ANDROID\QA_ANDROID\bin\Debug\QA_ANDROID.exe.config
 D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\bin\Debug\QA_ANDROID.exe.config
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\bin\Debug\QA_ANDROID.exe
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\bin\Debug\QA_ANDROID.pdb
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.csprojResolveAssemblyReference.cache
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\MainWindow.g.cs
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\App.g.cs
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID_MarkupCompile.cache
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID_MarkupCompile.lref
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\MainWindow.baml
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.g.resources
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.Properties.Resources.resources
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.csproj.GenerateResource.Cache
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.exe
+D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.pdb
