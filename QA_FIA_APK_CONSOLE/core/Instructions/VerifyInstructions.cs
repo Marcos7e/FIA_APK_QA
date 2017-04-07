@@ -29,7 +29,7 @@ namespace QA_FIA_APK_CONSOLE.core.Instructions
                     case Instructions.COUNT: { return VerifyCount(data); }
                 }
 
-                return true;
+                return false;
             }
             catch (Exception e)
             {
@@ -48,6 +48,8 @@ namespace QA_FIA_APK_CONSOLE.core.Instructions
             }
             catch (Exception e)
             {
+                log = new Logger();
+                log.WriteInLog(e);
                 return false;
             }
         }
@@ -59,6 +61,8 @@ namespace QA_FIA_APK_CONSOLE.core.Instructions
             }
             catch (Exception e)
             {
+                log = new Logger();
+                log.WriteInLog(e);
                 return false;
             }
         }
@@ -70,6 +74,8 @@ namespace QA_FIA_APK_CONSOLE.core.Instructions
             }
             catch (Exception e)
             {
+                log = new Logger();
+                log.WriteInLog(e);
                 return false;
             }
         }
