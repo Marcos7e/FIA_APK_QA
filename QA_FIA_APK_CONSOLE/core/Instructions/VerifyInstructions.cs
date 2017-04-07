@@ -1,4 +1,5 @@
-﻿using QA_FIA_APK_CONSOLE.utils;
+﻿using QA_FIA_APK_CONSOLE.metricas;
+using QA_FIA_APK_CONSOLE.utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,15 +18,15 @@ namespace QA_FIA_APK_CONSOLE.core.Instructions
             COUNT
         }
 
-        public bool Verify(Instructions inst)
+        public bool Verify(Instructions inst, MetricData_Model data)
         {
             try
             {
                 switch (inst)
                 {
-                    case Instructions.EXIST: { return VerifyExist(); }
-                    case Instructions.ANY: { return VerifyAny(); }
-                    case Instructions.COUNT: { return VerifyCount(); }
+                    case Instructions.EXIST: { return VerifyExist(data); }
+                    case Instructions.ANY: { return VerifyAny(data); }
+                    case Instructions.COUNT: { return VerifyCount(data); }
                 }
 
                 return true;
@@ -38,10 +39,8 @@ namespace QA_FIA_APK_CONSOLE.core.Instructions
             }
         }
 
-
         #region palabras reservadas
-
-        private bool VerifyExist()
+        private bool VerifyExist(MetricData_Model data)
         {
             try
             {
@@ -52,8 +51,7 @@ namespace QA_FIA_APK_CONSOLE.core.Instructions
                 return false;
             }
         }
-
-        private bool VerifyAny()
+        private bool VerifyAny(MetricData_Model data)
         {
             try
             {
@@ -64,8 +62,7 @@ namespace QA_FIA_APK_CONSOLE.core.Instructions
                 return false;
             }
         }
-
-        private bool VerifyCount()
+        private bool VerifyCount(MetricData_Model data)
         {
             try
             {
@@ -76,7 +73,6 @@ namespace QA_FIA_APK_CONSOLE.core.Instructions
                 return false;
             }
         }
-
         #endregion
 
 
