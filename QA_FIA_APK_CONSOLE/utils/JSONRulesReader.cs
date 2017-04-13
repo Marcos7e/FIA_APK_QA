@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -14,10 +15,11 @@ namespace QA_FIA_APK_CONSOLE.utils
 
         public void read()
         {
-            using (StreamReader r = new StreamReader(@"D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_FIA_APK_CONSOLE\VerificationRules\generated (1).json"))
+            using (StreamReader r = new StreamReader(@"D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_FIA_APK_CONSOLE\VerificationRules\Android\metric_test.json"))
             {
                 string json = r.ReadToEnd();
-                var items = JsonConvert.DeserializeObject(json);
+                JObject rss = JObject.Parse(json);
+                var metrics = (object)rss["Metric"];
             }
         }
     }

@@ -56,12 +56,11 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="VerificationRules\generated %281%29.json" />
+    <None Include="VerificationRules\Android\metric_test.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="logs\" />
     <Folder Include="metricas\" />
-    <Folder Include="VerificationRules\Android\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
