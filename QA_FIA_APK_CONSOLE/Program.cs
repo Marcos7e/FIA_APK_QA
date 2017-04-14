@@ -15,8 +15,9 @@ namespace QA_FIA_APK_CONSOLE
 
             AndroidVerification av = new AndroidVerification();
             av.LoadMetrics();
-            JSONRulesReader jr = new JSONRulesReader();
-            jr.read();
+            JSONRulesReader jra = new JSONRulesReader(@"D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_FIA_APK_CONSOLE\VerificationRules\Android");
+            var files = jra.METRIC_FILES;
+            jra.read();
         }
     }
 }

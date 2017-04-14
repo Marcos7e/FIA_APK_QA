@@ -1,23 +1,8 @@
 ﻿{
-  "Metric": [
-    {
+
       "Name": "Metric example 1",
       "Description": "Verify if exists something in file1, file2, and file3 ...",
       "SearchIn": [ "file1.xml", "file2.xml", "file3.xml" ],
-      "Verify": {
-        "Operation": "Exists",
-        "Value": "VerticalLayout"
-      }
-    },
-    {
-      "Name": "Metric example 2",
-      "Description": "Verify less than 3 buttons and 3 checkboxes in layout.xml ...",
-      "SearchIn": [ "layout.xml" ],
-      "Verify": {
-        "Operation": "<",
-        "Times": "3",
-        "Value": [ "Button", "Checkbox" ]
-      }
-    }
-  ]
+      "Operation": "Exists",
+      "Value": ["VerticalLayout"]
 }

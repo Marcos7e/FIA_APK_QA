@@ -47,6 +47,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="core\Interfaces\IVerificable.cs" />
+    <Compile Include="core\LanguageData\VerifyAction.cs" />
+    <Compile Include="core\Models\Metric.cs" />
     <Compile Include="core\Verificables\AndroidVerification.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
