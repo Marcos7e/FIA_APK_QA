@@ -52,8 +52,10 @@
     <Compile Include="core\Verificables\AndroidVerification.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="utils\ClassTextReader.cs" />
     <Compile Include="utils\JSONRulesReader.cs" />
     <Compile Include="utils\Logger.cs" />
+    <Compile Include="utils\XMLNodeReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

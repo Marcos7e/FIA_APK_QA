@@ -30,27 +30,30 @@ namespace QA_FIA_APK_CONSOLE.core.LanguageData
         {
             try
             {
-                switch (metric.Operation)
+                Verify verify;
+                Enum.TryParse(metric.Operation, out verify);
+
+                switch (verify)
                 {
-                    //case Verify.EXISTS:
-                    //    return VerifyExists(metric);
-                        
-                    //case Verify.EQUAL:
-                    //    return VerifyEqual(metric);
-                        
-                    //case Verify.MORE_THAN:
-                    //    return VerifyMoreThan(metric);
-                        
-                    //case Verify.LESS_THAN:
-                    //    return VerifyLessThan(metric);
-                        
-                    //case Verify.MORE_EQUAL:
-                    //    return VerifyMoreEqual(metric);
-                        
-                    //case Verify.LESS_EQUAL:
-                    //    return VerifyLessEqual(metric);
-                        
-                     default:
+                    case Verify.EXISTS:
+                        return VerifyExists(metric);
+
+                    case Verify.EQUAL:
+                        return VerifyEqual(metric);
+
+                    case Verify.MORE_THAN:
+                        return VerifyMoreThan(metric);
+
+                    case Verify.LESS_THAN:
+                        return VerifyLessThan(metric);
+
+                    case Verify.MORE_EQUAL:
+                        return VerifyMoreEqual(metric);
+
+                    case Verify.LESS_EQUAL:
+                        return VerifyLessEqual(metric);
+
+                    default:
                         throw new Exception();
                 }
 
