@@ -11,6 +11,8 @@ namespace QA_FIA_APK_CONSOLE.core.LanguageData
     public class VerifyAction
     {
         public Logger log;
+        private ClassTextReader _ctr;
+
         public enum Verify
         {
             EXISTS,
@@ -88,7 +90,32 @@ namespace QA_FIA_APK_CONSOLE.core.LanguageData
 
         private bool VerifyEqual(Metric metric)
         {
-            throw new NotImplementedException();
+            try
+            {
+                bool resp = false;
+
+                foreach (string file_dir in metric.SearchIn)
+                {
+                    _ctr = new ClassTextReader(file_dir);
+                    var classData = _ctr.READED_CLASS;
+
+                    foreach (var value in metric.Value)
+                    {
+                        resp = classData.Contains(value);
+                    }
+
+                }
+
+                return resp;
+
+            }
+            catch (Exception e)
+            {
+                log = new Logger();
+                log.WriteInLog(e);
+                return false;
+
+            }
         }
 
         private bool VerifyExists(Metric metric)
