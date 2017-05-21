@@ -49,6 +49,7 @@
     <Compile Include="core\Interfaces\IVerificable.cs" />
     <Compile Include="core\LanguageData\VerifyAction.cs" />
     <Compile Include="core\Models\Metric.cs" />
+    <Compile Include="core\Models\MetricInfo.cs" />
     <Compile Include="core\Verificables\AndroidVerification.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -60,9 +61,13 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-    <None Include="VerificationRules\Android\metric_test.json" />
+    <None Include="VerificationRules\Android\metric_test_1.json" />
+    <None Include="VerificationRules\Android\metric_test_4.json" />
+    <None Include="VerificationRules\Android\metric_test_3.json" />
+    <None Include="VerificationRules\Android\metric_test_2.json" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="APK TEST\" />
     <Folder Include="logs\" />
     <Folder Include="metricas\" />
   </ItemGroup>

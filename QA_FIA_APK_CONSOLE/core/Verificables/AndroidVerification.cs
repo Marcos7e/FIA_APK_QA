@@ -14,7 +14,7 @@ namespace QA_FIA_APK_CONSOLE.core.Verificables
         public Logger l;
 
         public List<string> MetricFiles { get; set; }
-        public string METRIC_ROUTE { get; set; } = @"C:\Users\Usuario\Documents\BE10003\Metricas";
+        public string METRIC_ROUTE { get; set; } = @"C:\Users\Marcos\Desktop\Test APK Android\JSON Metricas";
         public List<string> SourceFiles { get; set; }
         public string SOURCE_ROUTE { get; set; }
 

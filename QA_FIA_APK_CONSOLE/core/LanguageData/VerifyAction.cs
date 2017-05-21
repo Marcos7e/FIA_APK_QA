@@ -2,6 +2,7 @@
 using QA_FIA_APK_CONSOLE.utils;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,8 @@ namespace QA_FIA_APK_CONSOLE.core.LanguageData
     {
         public Logger log;
         private ClassTextReader _ctr;
+        private List<Metric> _metrics;
+        private List<MetricInfo> _MetricInfoList;
 
         public enum Verify
         {
@@ -26,9 +29,16 @@ namespace QA_FIA_APK_CONSOLE.core.LanguageData
         public VerifyAction()
         {
             // mandar a llamar lectura de Metricas vs Acoplamiento ...
+            _metrics = new List<Metric>();
         }
 
-        public bool verify(Metric metric)
+        public VerifyAction(List<Metric> metricList)
+        {
+            _metrics = new List<Metric>();
+            _metrics = metricList;
+        }
+
+        public MetricInfo verify(Metric metric)
         {
             try
             {
@@ -64,63 +74,99 @@ namespace QA_FIA_APK_CONSOLE.core.LanguageData
             {
                 log = new Logger();
                 log.WriteInLog(e);
-                return false;
+                return null;
             }
         }
 
-        private bool VerifyLessEqual(Metric metric)
-        {
-            throw new NotImplementedException();
-        }
-
-        private bool VerifyMoreEqual(Metric metric)
-        {
-            throw new NotImplementedException();
-        }
-
-        private bool VerifyLessThan(Metric metric)
-        {
-            throw new NotImplementedException();
-        }
-
-        private bool VerifyMoreThan(Metric metric)
-        {
-            throw new NotImplementedException();
-        }
-
-        private bool VerifyEqual(Metric metric)
+        public List<MetricInfo> StartVerifications()
         {
             try
             {
-                bool resp = false;
-
-                foreach (string file_dir in metric.SearchIn)
+                _MetricInfoList = new List<MetricInfo>();
+                foreach (Metric metric in _metrics)
                 {
-                    _ctr = new ClassTextReader(file_dir);
-                    var classData = _ctr.READED_CLASS;
-
-                    foreach (var value in metric.Value)
-                    {
-                        resp = classData.Contains(value);
-                    }
-
+                    _MetricInfoList.Add(verify(metric));
                 }
-
-                return resp;
+                return _MetricInfoList;
 
             }
             catch (Exception e)
             {
                 log = new Logger();
                 log.WriteInLog(e);
-                return false;
-
+                return null;
             }
         }
 
-        private bool VerifyExists(Metric metric)
+        private MetricInfo VerifyLessEqual(Metric metric)
         {
             throw new NotImplementedException();
+        }
+
+        private MetricInfo VerifyMoreEqual(Metric metric)
+        {
+            throw new NotImplementedException();
+        }
+
+        private MetricInfo VerifyLessThan(Metric metric)
+        {
+            throw new NotImplementedException();
+        }
+
+        private MetricInfo VerifyMoreThan(Metric metric)
+        {
+            throw new NotImplementedException();
+        }
+
+        private MetricInfo VerifyEqual(Metric metric)
+        {
+            throw new NotImplementedException();
+        }
+
+        private MetricInfo VerifyExists(Metric metric)
+        {
+
+            try
+            {
+                bool resp = false;
+                MetricInfo mi;
+                string files = string.Empty;
+
+                foreach (string file_dir in metric.SearchIn)
+                {
+                    _ctr = new ClassTextReader(file_dir);
+                    var classData = _ctr.READED_CLASS;
+                    files += Path.GetFileName(file_dir) + " ";
+
+                    foreach (var value in metric.Value)
+                    {
+                        resp = classData.Contains(value);
+                        if (resp != true)
+                            break;
+                    }
+                }
+
+
+                mi = new MetricInfo
+                {
+                    Name = metric.Name,
+                    Description = metric.Description,
+                    File = files,
+                    Operation = metric.Operation,
+                    Result = resp
+                };
+
+
+                return mi;
+
+            }
+            catch (Exception e)
+            {
+                log = new Logger();
+                log.WriteInLog(e);
+                return null;
+
+            }
         }
     }
 }

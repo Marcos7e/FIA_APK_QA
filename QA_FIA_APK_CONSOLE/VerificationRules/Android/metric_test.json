@@ -1,8 +1,0 @@
-﻿{
-
-      "Name": "Metric example 1",
-      "Description": "Verify if exists something in file1, file2, and file3 ...",
-      "SearchIn": [ "file1.xml", "file2.xml", "file3.xml" ],
-      "Operation": "Exists",
-      "Value": ["VerticalLayout"]
-}
