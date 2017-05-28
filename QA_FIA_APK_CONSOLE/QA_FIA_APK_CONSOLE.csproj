@@ -65,6 +65,7 @@
     <None Include="VerificationRules\Android\metric_test_4.json" />
     <None Include="VerificationRules\Android\metric_test_3.json" />
     <None Include="VerificationRules\Android\metric_test_2.json" />
+    <None Include="VerificationRules\Android\metric_test_5.json" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="APK TEST\" />
@@ -72,4 +73,5 @@
     <Folder Include="metricas\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions />
 </Project>

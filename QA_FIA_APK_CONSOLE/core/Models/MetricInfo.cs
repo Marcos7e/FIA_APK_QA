@@ -13,5 +13,6 @@ namespace QA_FIA_APK_CONSOLE.core.Models
         public string Operation { get; set; }
         public string File { get; set; }
         public bool Result { get; set; }
+        public int? Times { get; set; }
     }
 }

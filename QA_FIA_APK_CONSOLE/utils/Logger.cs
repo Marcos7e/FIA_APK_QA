@@ -15,7 +15,7 @@ namespace QA_FIA_APK_CONSOLE.utils
 
         public Logger()
         {
-            LOG_ROUTE = @"C:\Users\Usuario\Documents\BE10003\FIA_APK_QA\QA_FIA_APK_CONSOLE\logs\log.txt";
+            LOG_ROUTE = @"C:\Users\Marcos\Documents\LOGGER\log.txt";
         }
 
         private void VerifyLogExistence()

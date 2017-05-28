@@ -1,8 +1,9 @@
 ﻿{
 
-      "Name": "Metric Example 3",
-      "Description": "Verify if principal Layout has Encoding to UTF-8.",
-      "SearchIn": [ "D:\\Storage\\FIA UES\\project\\QA_ANDROID\\FIA_APK_QA\\QA_FIA_APK_CONSOLE\\APK TEST\\MyApplication\\app\\src\\main\\res\\layout\\activity_main.xml" ],
-      "Operation": "Exists",
-      "Value": ["encoding=\"utf-8\""]
+  "Name": "Metric Example 3",
+  "Description": "Verify if principal Layout At Least 2 buttons",
+  "SearchIn": [ "D:\\Storage\\FIA UES\\project\\QA_ANDROID\\FIA_APK_QA\\QA_FIA_APK_CONSOLE\\APK TEST\\MyApplication\\app\\src\\main\\res\\layout\\activity_main.xml" ],
+  "Operation": "LESS_EQUAL",
+  "Value": [ "Button" ],
+  "Times": 2
 }

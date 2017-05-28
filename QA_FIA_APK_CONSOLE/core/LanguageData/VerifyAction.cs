@@ -43,7 +43,7 @@ namespace QA_FIA_APK_CONSOLE.core.LanguageData
             try
             {
                 Verify verify;
-                Enum.TryParse(metric.Operation, out verify);
+                Enum.TryParse(metric.Operation.ToUpper(), out verify);
 
                 switch (verify)
                 {
@@ -100,27 +100,213 @@ namespace QA_FIA_APK_CONSOLE.core.LanguageData
 
         private MetricInfo VerifyLessEqual(Metric metric)
         {
-            throw new NotImplementedException();
+            try
+            {
+                bool resp = false;
+                int localTimes = 0;
+                MetricInfo mi;
+                string files = string.Empty;
+
+                foreach (string file_dir in metric.SearchIn)
+                {
+                    _ctr = new ClassTextReader(file_dir);
+                    var classData = _ctr.READED_CLASS;
+                    files += Path.GetFileName(file_dir) + " ";
+
+                    foreach (var value in metric.Value)
+                    {
+                        localTimes = classData.Count(c => c.Equals(value));
+                        resp = localTimes <= metric.Times;
+                        if (resp != true)
+                            break;
+                    }
+                }
+                mi = new MetricInfo
+                {
+                    Name = metric.Name,
+                    Description = metric.Description,
+                    File = files,
+                    Operation = metric.Operation.ToUpper(),
+                    Result = resp
+                };
+                return mi;
+
+            }
+            catch (Exception e)
+            {
+                log = new Logger();
+                log.WriteInLog(e);
+                return null;
+            }
         }
 
         private MetricInfo VerifyMoreEqual(Metric metric)
         {
-            throw new NotImplementedException();
+            try
+            {
+                bool resp = false;
+                int localTimes = 0;
+                MetricInfo mi;
+                string files = string.Empty;
+
+                foreach (string file_dir in metric.SearchIn)
+                {
+                    _ctr = new ClassTextReader(file_dir);
+                    var classData = _ctr.READED_CLASS;
+                    files += Path.GetFileName(file_dir) + " ";
+
+                    foreach (var value in metric.Value)
+                    {
+                        localTimes = classData.Count(c => c.Equals(value));
+                        resp = localTimes >= metric.Times;
+                        if (resp != true)
+                            break;
+                    }
+                }
+                mi = new MetricInfo
+                {
+                    Name = metric.Name,
+                    Description = metric.Description,
+                    File = files,
+                    Operation = metric.Operation.ToUpper(),
+                    Result = resp
+                };
+                return mi;
+
+            }
+            catch (Exception e)
+            {
+                log = new Logger();
+                log.WriteInLog(e);
+                return null;
+            }
         }
 
         private MetricInfo VerifyLessThan(Metric metric)
         {
-            throw new NotImplementedException();
+            try
+            {
+                bool resp = false;
+                int localTimes = 0;
+                MetricInfo mi;
+                string files = string.Empty;
+
+                foreach (string file_dir in metric.SearchIn)
+                {
+                    _ctr = new ClassTextReader(file_dir);
+                    var classData = _ctr.READED_CLASS;
+                    files += Path.GetFileName(file_dir) + " ";
+
+                    foreach (var value in metric.Value)
+                    {
+                        localTimes = classData.Count(c => c.Equals(value));
+                        resp = localTimes < metric.Times;
+                        if (resp != true)
+                            break;
+                    }
+                }
+                mi = new MetricInfo
+                {
+                    Name = metric.Name,
+                    Description = metric.Description,
+                    File = files,
+                    Operation = metric.Operation.ToUpper(),
+                    Result = resp
+                };
+                return mi;
+
+            }
+            catch (Exception e)
+            {
+                log = new Logger();
+                log.WriteInLog(e);
+                return null;
+            }
         }
 
         private MetricInfo VerifyMoreThan(Metric metric)
         {
-            throw new NotImplementedException();
+            try
+            {
+                bool resp = false;
+                int localTimes = 0;
+                MetricInfo mi;
+                string files = string.Empty;
+
+                foreach (string file_dir in metric.SearchIn)
+                {
+                    _ctr = new ClassTextReader(file_dir);
+                    var classData = _ctr.READED_CLASS;
+                    files += Path.GetFileName(file_dir) + " ";
+
+                    foreach (var value in metric.Value)
+                    {
+                        localTimes = classData.Count(c => c.Equals(value));
+                        resp = localTimes > metric.Times;
+                        if (resp != true)
+                            break;
+                    }
+                }
+                mi = new MetricInfo
+                {
+                    Name = metric.Name,
+                    Description = metric.Description,
+                    File = files,
+                    Operation = metric.Operation.ToUpper(),
+                    Result = resp
+                };
+                return mi;
+
+            }
+            catch (Exception e)
+            {
+                log = new Logger();
+                log.WriteInLog(e);
+                return null;
+            }
         }
 
         private MetricInfo VerifyEqual(Metric metric)
         {
-            throw new NotImplementedException();
+            try
+            {
+                bool resp = false;
+                MetricInfo mi;
+                string files = string.Empty;
+
+                foreach (string file_dir in metric.SearchIn)
+                {
+                    _ctr = new ClassTextReader(file_dir);
+                    var classData = _ctr.READED_CLASS;
+                    files += Path.GetFileName(file_dir) + " ";
+
+                    foreach (var value in metric.Value)
+                    {
+                        resp = classData.Count(c => c.Equals(value)) == metric.Times;
+                        if (resp != true)
+                            break;
+                    }
+
+                }
+                mi = new MetricInfo
+                {
+                    Name = metric.Name,
+                    Description = metric.Description,
+                    File = files,
+                    Operation = metric.Operation.ToUpper(),
+                    Result = resp
+                };
+
+
+                return mi;
+
+            }
+            catch (Exception e)
+            {
+                log = new Logger();
+                log.WriteInLog(e);
+                return null;
+            }
         }
 
         private MetricInfo VerifyExists(Metric metric)
@@ -152,7 +338,7 @@ namespace QA_FIA_APK_CONSOLE.core.LanguageData
                     Name = metric.Name,
                     Description = metric.Description,
                     File = files,
-                    Operation = metric.Operation,
+                    Operation = metric.Operation.ToUpper(),
                     Result = resp
                 };
 
