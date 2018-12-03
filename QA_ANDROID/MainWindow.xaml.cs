@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,12 @@ namespace QA_ANDROID
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void BtnSelectApk_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            var apk = ofd.ShowDialog();
         }
     }
 }

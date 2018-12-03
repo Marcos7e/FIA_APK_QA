@@ -14,6 +14,7 @@ namespace QA_FIA_APK_CONSOLE
     {
         static void Main(string[] args)
         {
+            Menu.Hello();
             JSONRulesReader jra = new JSONRulesReader(@"D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_FIA_APK_CONSOLE\VerificationRules\Android");
             ClassTextReader ctr = new ClassTextReader(@"C:\Users\Marcos\Desktop\IVerificable.cs");
             VerifyAction va = new VerifyAction(jra.METRIC_DATA);

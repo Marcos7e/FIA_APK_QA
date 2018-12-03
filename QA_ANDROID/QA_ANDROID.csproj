@@ -35,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -55,6 +59,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="utils\ClassTextReader.cs" />
+    <Compile Include="utils\JSONRulesReader.cs" />
+    <Compile Include="utils\Logger.cs" />
+    <Compile Include="utils\Menu.cs" />
+    <Compile Include="utils\XMLNodeReader.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -63,12 +72,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="core\Interfaces\IVerificable.cs" />
+    <Compile Include="core\LanguageData\VerifyAction.cs" />
+    <Compile Include="core\Models\Metric.cs" />
+    <Compile Include="core\Models\MetricInfo.cs" />
+    <Compile Include="core\Verificables\AndroidVerification.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="metricas\MetricData_Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -91,14 +106,16 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <None Include="VerificationRules\Android\metric_test_1.json" />
+    <None Include="VerificationRules\Android\metric_test_2.json" />
+    <None Include="VerificationRules\Android\metric_test_3.json" />
+    <None Include="VerificationRules\Android\metric_test_4.json" />
+    <None Include="VerificationRules\Android\metric_test_5.json" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="core\" />
-    <Folder Include="metricas\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

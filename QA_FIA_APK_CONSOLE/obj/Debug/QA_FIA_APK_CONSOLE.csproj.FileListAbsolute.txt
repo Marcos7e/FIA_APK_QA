@@ -12,3 +12,13 @@ D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_FIA_APK_CONSOLE\bin\Debug\QA
 D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_FIA_APK_CONSOLE\bin\Debug\QA_FIA_APK_CONSOLE.pdb
 D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_FIA_APK_CONSOLE\bin\Debug\Newtonsoft.Json.dll
 D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_FIA_APK_CONSOLE\bin\Debug\Newtonsoft.Json.xml
+C:\vsprojects\FIA_APK_QA\QA_FIA_APK_CONSOLE\bin\Debug\QA_FIA_APK_CONSOLE.exe.config
+C:\vsprojects\FIA_APK_QA\QA_FIA_APK_CONSOLE\bin\Debug\QA_FIA_APK_CONSOLE.exe
+C:\vsprojects\FIA_APK_QA\QA_FIA_APK_CONSOLE\bin\Debug\QA_FIA_APK_CONSOLE.pdb
+C:\vsprojects\FIA_APK_QA\QA_FIA_APK_CONSOLE\bin\Debug\Newtonsoft.Json.dll
+C:\vsprojects\FIA_APK_QA\QA_FIA_APK_CONSOLE\bin\Debug\Newtonsoft.Json.xml
+C:\vsprojects\FIA_APK_QA\QA_FIA_APK_CONSOLE\obj\Debug\QA_FIA_APK_CONSOLE.csprojAssemblyReference.cache
+C:\vsprojects\FIA_APK_QA\QA_FIA_APK_CONSOLE\obj\Debug\QA_FIA_APK_CONSOLE.csproj.CoreCompileInputs.cache
+C:\vsprojects\FIA_APK_QA\QA_FIA_APK_CONSOLE\obj\Debug\QA_FIA_APK_CONSOLE.csproj.CopyComplete
+C:\vsprojects\FIA_APK_QA\QA_FIA_APK_CONSOLE\obj\Debug\QA_FIA_APK_CONSOLE.exe
+C:\vsprojects\FIA_APK_QA\QA_FIA_APK_CONSOLE\obj\Debug\QA_FIA_APK_CONSOLE.pdb

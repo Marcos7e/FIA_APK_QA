@@ -1,0 +1,9 @@
+﻿{
+
+  "Name": "Metric Example 4",
+  "Description": "Verify if principal Layout has  5 or more CheckBoxes",
+  "SearchIn": [ "D:\\Storage\\FIA UES\\project\\QA_ANDROID\\FIA_APK_QA\\QA_FIA_APK_CONSOLE\\APK TEST\\MyApplication\\app\\src\\main\\res\\layout\\activity_main.xml" ],
+  "Operation": "MORE_EQUAL",
+  "Value": [ "CheckBox" ],
+  "Times":5
+}

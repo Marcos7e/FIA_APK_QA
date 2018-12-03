@@ -13,3 +13,21 @@ D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID
 D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.csproj.GenerateResource.Cache
 D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.exe
 D:\Storage\FIA UES\project\QA_ANDROID\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.pdb
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\bin\Debug\QA_ANDROID.exe.config
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\bin\Debug\QA_ANDROID.exe
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\bin\Debug\QA_ANDROID.pdb
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.csprojAssemblyReference.cache
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\MainWindow.g.cs
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\App.g.cs
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID_MarkupCompile.cache
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID_MarkupCompile.lref
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\MainWindow.baml
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.g.resources
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.Properties.Resources.resources
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.csproj.GenerateResource.cache
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.csproj.CoreCompileInputs.cache
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.exe
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.pdb
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\bin\Debug\Newtonsoft.Json.dll
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\bin\Debug\Newtonsoft.Json.xml
+C:\vsprojects\FIA_APK_QA\QA_ANDROID\obj\Debug\QA_ANDROID.csproj.CopyComplete
