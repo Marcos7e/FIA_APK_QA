@@ -13,6 +13,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Forms;
+using QA_ANDROID.core;
 
 namespace QA_ANDROID
 {
@@ -21,6 +23,10 @@ namespace QA_ANDROID
     /// </summary>
     public partial class MainWindow : Window
     {
+
+        string apkFolder = string.Empty;
+        TextMessage tx = null;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -28,8 +34,18 @@ namespace QA_ANDROID
 
         private void BtnSelectApk_Click(object sender, RoutedEventArgs e)
         {
-            OpenFileDialog ofd = new OpenFileDialog();
-            var apk = ofd.ShowDialog();
+            Analyzer a = new Analyzer();
+            tx = new TextMessage(TBGeneralInfo);
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+            DialogResult result = fbd.ShowDialog();
+
+            if (result == System.Windows.Forms.DialogResult.OK)
+            {
+                tx.SendMessage($"Seleccionado: {fbd.SelectedPath}");
+            }
+
+
+
         }
     }
 }
