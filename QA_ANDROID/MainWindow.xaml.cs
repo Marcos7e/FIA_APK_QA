@@ -34,7 +34,7 @@ namespace QA_ANDROID
 
         private void BtnSelectApk_Click(object sender, RoutedEventArgs e)
         {
-            Analyzer a = new Analyzer();
+            //Analyzer a = new Analyzer();
             tx = new TextMessage(TBGeneralInfo);
             FolderBrowserDialog fbd = new FolderBrowserDialog();
             DialogResult result = fbd.ShowDialog();
@@ -42,10 +42,15 @@ namespace QA_ANDROID
             if (result == System.Windows.Forms.DialogResult.OK)
             {
                 tx.SendMessage($"Seleccionado: {fbd.SelectedPath}");
+                apkFolder = fbd.SelectedPath;
             }
+                       
+        }
 
-
-
+        private void BtnExecAnalizys_Click(object sender, RoutedEventArgs e)
+        {
+            Analyzer a = new Analyzer();
+            a.StartMetricVerification(apkFolder);
         }
     }
 }

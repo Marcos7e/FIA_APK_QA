@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QA_FIA_APK_CONSOLE.utils
+namespace QA_ANDROID.utils
 {
     public class ClassTextReader
     {

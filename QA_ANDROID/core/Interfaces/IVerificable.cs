@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QA_FIA_APK_CONSOLE.core.Interfaces
+namespace QA_ANDROID.core.Interfaces
 {
     public interface IVerificable
     {

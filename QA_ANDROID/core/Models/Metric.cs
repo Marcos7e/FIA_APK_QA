@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static QA_FIA_APK_CONSOLE.core.LanguageData.VerifyAction;
+using static QA_ANDROID.core.LanguageData.VerifyAction;
 
-namespace QA_FIA_APK_CONSOLE.core.Models
+namespace QA_ANDROID.core.Models
 {
     public class Metric
     {

@@ -1,8 +1,8 @@
 ﻿{
 
-  "Name": "Metric Example 5",
+  "Name": "Metric Example 2",
   "Description": "Verify if principal Layout has a \"TextView\" 3 times.",
-  "SearchIn": [ "D:\\Storage\\FIA UES\\project\\QA_ANDROID\\FIA_APK_QA\\QA_FIA_APK_CONSOLE\\APK TEST\\MyApplication\\app\\src\\main\\res\\layout\\activity_main.xml" ],
+  "SearchIn": [ "activity_main.xml" ],
   "Operation": "EQUAL",
   "Value": [ "TextView" ],
   "Times": 12

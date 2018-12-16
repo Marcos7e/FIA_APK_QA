@@ -1,6 +1,6 @@
-﻿using QA_FIA_APK_CONSOLE.core.LanguageData;
-using QA_FIA_APK_CONSOLE.core.Models;
-using QA_FIA_APK_CONSOLE.utils;
+﻿using QA_ANDROID.core.Models;
+using QA_ANDROID.core.LanguageData;
+using QA_ANDROID.utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +19,9 @@ namespace QA_ANDROID.core
         public Analyzer()
         {
             jrr = new JSONRulesReader($@"{AppDomain.CurrentDomain.BaseDirectory}VerificationRules\Android");
+            jrr.read();
             va = new VerifyAction(jrr.METRIC_DATA);
+            
         }
 
         public void LoadMetricFiles()
@@ -27,9 +29,9 @@ namespace QA_ANDROID.core
             jrr.read();
         }
 
-        public List<MetricInfo> StartMetricVerification()
+        public List<MetricInfo> StartMetricVerification(string apkBasePath)
         {
-            return va.StartVerifications();
+            return va.StartVerifications(apkBasePath);
         }
     }
 }

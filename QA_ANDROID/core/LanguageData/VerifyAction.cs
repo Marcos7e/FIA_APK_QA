@@ -1,5 +1,5 @@
-﻿using QA_FIA_APK_CONSOLE.core.Models;
-using QA_FIA_APK_CONSOLE.utils;
+﻿using QA_ANDROID.core.Models;
+using QA_ANDROID.utils;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QA_FIA_APK_CONSOLE.core.LanguageData
+namespace QA_ANDROID.core.LanguageData
 {
     public class VerifyAction
     {
@@ -26,16 +26,45 @@ namespace QA_FIA_APK_CONSOLE.core.LanguageData
             LESS_EQUAL
         }
 
-        public VerifyAction()
-        {
-            // mandar a llamar lectura de Metricas vs Acoplamiento ...
-            _metrics = new List<Metric>();
-        }
-
         public VerifyAction(List<Metric> metricList)
         {
             _metrics = new List<Metric>();
             _metrics = metricList;
+        }
+
+        private void FindingCoincidencesWithFileNames(Metric metric, string baseApkPath)
+        {
+            List<string> FilePaths = new List<string>();
+            List<string> dirPaths = new List<string>();
+
+            foreach (string filedir in metric.SearchIn)
+            {
+                dirPaths = Directory.GetFiles(baseApkPath, filedir, SearchOption.AllDirectories).ToList();
+                metric.SearchIn = dirPaths;
+                foreach (string path in metric.SearchIn)
+                { Console.WriteLine($"Archivo encontrado en: {path}"); }
+            }
+        }
+                
+        public List<MetricInfo> StartVerifications(string apkBasePath)
+        {
+            try
+            {
+                _MetricInfoList = new List<MetricInfo>();
+                foreach (Metric metric in _metrics)
+                {
+                    FindingCoincidencesWithFileNames(metric, apkBasePath);
+                    _MetricInfoList.Add(verify(metric));
+                }
+                return _MetricInfoList;
+
+            }
+            catch (Exception e)
+            {
+                log = new Logger();
+                log.WriteInLog(e);
+                return null;
+            }
         }
 
         public MetricInfo verify(Metric metric)
@@ -77,27 +106,7 @@ namespace QA_FIA_APK_CONSOLE.core.LanguageData
                 return null;
             }
         }
-
-        public List<MetricInfo> StartVerifications()
-        {
-            try
-            {
-                _MetricInfoList = new List<MetricInfo>();
-                foreach (Metric metric in _metrics)
-                {
-                    _MetricInfoList.Add(verify(metric));
-                }
-                return _MetricInfoList;
-
-            }
-            catch (Exception e)
-            {
-                log = new Logger();
-                log.WriteInLog(e);
-                return null;
-            }
-        }
-
+                
         private MetricInfo VerifyLessEqual(Metric metric)
         {
             try

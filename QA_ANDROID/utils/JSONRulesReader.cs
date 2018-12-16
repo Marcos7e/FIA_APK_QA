@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
-using QA_FIA_APK_CONSOLE.core.Models;
+using QA_ANDROID.core.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QA_FIA_APK_CONSOLE.utils
+namespace QA_ANDROID.utils
 {
     public class JSONRulesReader
     {

@@ -1,5 +1,5 @@
-﻿using QA_FIA_APK_CONSOLE.core.Interfaces;
-using QA_FIA_APK_CONSOLE.utils;
+﻿using QA_ANDROID.core.Interfaces;
+using QA_ANDROID.utils;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QA_FIA_APK_CONSOLE.core.Verificables
+namespace QA_ANDROID.core.Verificables
 {
     public class AndroidVerification : IVerificable
     {

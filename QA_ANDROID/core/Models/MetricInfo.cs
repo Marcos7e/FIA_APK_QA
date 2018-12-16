@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QA_FIA_APK_CONSOLE.core.Models
+namespace QA_ANDROID.core.Models
 {
     public class MetricInfo
     {

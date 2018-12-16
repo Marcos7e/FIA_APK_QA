@@ -1,0 +1,9 @@
+C:\vsprojects\FIA_APK_QA\QA_ANDROID_TEST\bin\Debug\QA_ANDROID_TEST.dll
+C:\vsprojects\FIA_APK_QA\QA_ANDROID_TEST\bin\Debug\QA_ANDROID_TEST.pdb
+C:\vsprojects\FIA_APK_QA\QA_ANDROID_TEST\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\vsprojects\FIA_APK_QA\QA_ANDROID_TEST\bin\Debug\es\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\vsprojects\FIA_APK_QA\QA_ANDROID_TEST\obj\Debug\QA_ANDROID_TEST.csprojAssemblyReference.cache
+C:\vsprojects\FIA_APK_QA\QA_ANDROID_TEST\obj\Debug\QA_ANDROID_TEST.csproj.CoreCompileInputs.cache
+C:\vsprojects\FIA_APK_QA\QA_ANDROID_TEST\obj\Debug\QA_ANDROID_TEST.csproj.CopyComplete
+C:\vsprojects\FIA_APK_QA\QA_ANDROID_TEST\obj\Debug\QA_ANDROID_TEST.dll
+C:\vsprojects\FIA_APK_QA\QA_ANDROID_TEST\obj\Debug\QA_ANDROID_TEST.pdb

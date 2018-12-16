@@ -8,8 +8,8 @@
         Title="QA_FIA_ANDROID" Height="450" Width="850">
 
     <Grid Background="Gray">
-        <Button x:Name="BtnModifyRules" Content="3. Agregar/Modificar Reglas" HorizontalAlignment="Left" Margin="10,273,0,0" VerticalAlignment="Top" Width="182" Height="80"/>
-        <Button x:Name="BtnSelectApk" Content="1. Seleccionar y Analizar APK" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Width="182" Height="80" Click="BtnSelectApk_Click" />
+        <Button x:Name="BtnExecAnalizys" Content="2. Ejecutar Análisis" HorizontalAlignment="Left" Margin="10,273,0,0" VerticalAlignment="Top" Width="182" Height="80" Click="BtnExecAnalizys_Click"/>
+        <Button x:Name="BtnSelectApk" Content="1. Seleccionar ruta de APK" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top" Width="182" Height="80" Click="BtnSelectApk_Click" />
         <Label Content="Resultado de Análisis:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="212,10,0,0" Width="143"/>
         <TextBlock x:Name="TBGeneralInfo" HorizontalAlignment="Left" Margin="212,41,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="358" Width="605" Background="WhiteSmoke"/>
 
